@@ -1,7 +1,7 @@
 // Load the built-in http module
 const http = require('http');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Create a simple HTTP serve
 const server = http.createServer((req, res) => {
